@@ -4,7 +4,6 @@ const { ModuleFederationPlugin } = require('webpack').container;
 const AutomaticVendorFederation = require('@module-federation/automatic-vendor-federation');
 const packageJson = require('../package.json');
 
-const exclude = ['express', 'serverless-http'];
 const paths = require('./paths');
 
 const siteData = {
@@ -50,7 +49,6 @@ const parts = (/* isProduction */) => {
         // This should be our 'shared contract'
         // between the host and the remotes.
         shared: AutomaticVendorFederation({
-          exclude,
           packageJson,
           shareFrom: ['dependencies'],
           jquery: {
