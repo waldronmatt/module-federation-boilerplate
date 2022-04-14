@@ -2,7 +2,7 @@
   <h2>Contact Us!</h2>
   <br />
   <label for="fullname">Full Name * :</label>
-  <input type="text" class="form-control" name="fullname" required="" />
+  <input type="text" class="form-control" name="fullname" required="" id="fullname" />
   <br />
   <br />
 
@@ -13,11 +13,12 @@
     name="email"
     data-parsley-trigger="change"
     required=""
+    id="email"
   />
   <br />
   <br />
 
-  <label for="email">Phone * :</label>
+  <label for="phone">Phone * :</label>
   <input
     type="phone"
     class="form-control"
@@ -26,6 +27,7 @@
     required=""
     data-jquery-mask-phone
     pattern="/^\(\d{3}\)\s?\d{3}-\d{4}$/"
+    id="phone"
   />
   <br />
   <br />
