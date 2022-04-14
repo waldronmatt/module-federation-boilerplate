@@ -1,0 +1,74 @@
+<form id="demo-form" data-parsley-validate="">
+  <hr />
+  <br />
+  <h2>Contact Us!</h2>
+  <label for="fullname">Full Name * :</label>
+  <input type="text" class="form-control" name="fullname" required="" />
+  <br />
+  <br />
+
+  <label for="email">Email * :</label>
+  <input
+    type="email"
+    class="form-control"
+    name="email"
+    data-parsley-trigger="change"
+    required=""
+  />
+  <br />
+  <br />
+
+  <label for="email">Phone * :</label>
+  <input
+    type="phone"
+    class="form-control"
+    name="phone"
+    data-parsley-trigger="change"
+    required=""
+    data-jquery-mask-phone
+    pattern="/^\(\d{3}\)\s?\d{3}-\d{4}$/"
+  />
+  <br />
+  <br />
+
+  <label for="contactMethod">Preferred Contact Method *:</label>
+  <p>
+    Email:
+    <input
+      type="radio"
+      name="contactMethod"
+      id="contactMethodEmail"
+      value="Email"
+      required=""
+    />
+    Phone:
+    <input
+      type="radio"
+      name="contactMethod"
+      id="contactMethodPhone"
+      value="Phone"
+    />
+  </p>
+
+  <p>
+    <label for="heard">Heard about us via *:</label>
+    <select id="heard" required="">
+      <option value="">Choose..</option>
+      <option value="press">Press</option>
+      <option value="net">Internet</option>
+      <option value="mouth">Word of mouth</option>
+      <option value="other">Other..</option>
+    </select>
+  </p>
+
+  <br />
+  <input type="submit" class="btn btn-default" value="validate" />
+
+  <p>
+    <small
+      >* Please, note that this demo form is not a perfect example of
+      UX-awareness. The aim here is to show a quick overview of parsley-API and
+      Parsley customizable behavior.</small
+    >
+  </p>
+</form>
