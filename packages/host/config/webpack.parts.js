@@ -3,7 +3,6 @@ const { ModuleFederationPlugin } = require('webpack').container;
 // eslint-disable-next-line max-len
 const AutomaticVendorFederation = require('@module-federation/automatic-vendor-federation');
 const packageJson = require('../package.json');
-
 const paths = require('./paths');
 
 const siteData = {
@@ -49,6 +48,7 @@ const parts = (/* isProduction */) => {
         // This should be our 'shared contract'
         // between the host and the remotes.
         shared: AutomaticVendorFederation({
+          exclude: [''],
           packageJson,
           shareFrom: ['dependencies'],
           jquery: {
