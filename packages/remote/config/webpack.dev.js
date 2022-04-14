@@ -18,7 +18,6 @@ const developmentConfig = {
       'Access-Control-Allow-Headers': '*',
       'Access-Control-Allow-Methods': '*',
     },
-    // use a rewrite for our 404 page to simulate express logic
     historyApiFallback: {
       rewrites: [{ from: /./, to: '/404.html' }],
     },

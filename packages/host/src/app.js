@@ -16,6 +16,11 @@ import(/* webpackChunkName: "FormApp" */ './init-remote')
     console.log(err, 'Error initializing lazy loaded remote.');
   });
 
+//
+// Uncomment below to load dynamic remote on click event
+// And uncomment lines in index.html
+//
+
 // const getHeader = document.getElementById('click-me');
 
 // const lazyLoadRemoteApp = () => {

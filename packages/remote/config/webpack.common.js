@@ -5,7 +5,6 @@ const paths = require('./paths');
 const parts = require('./webpack.parts');
 
 const commonConfig = isProduction => {
-  // pass `isProduction` environment variable into your parts file
   parts(isProduction);
 
   return merge([

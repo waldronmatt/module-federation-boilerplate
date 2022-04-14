@@ -5,7 +5,6 @@ const paths = require('./paths');
 const parts = require('./webpack.parts');
 
 const commonConfig = (isProduction, env) => {
-  // pass `isProduction` environment variable into your parts file
   parts(isProduction);
   const targetEnv = env.TARGET_ENV || 'prod';
 
@@ -28,9 +27,6 @@ const commonConfig = (isProduction, env) => {
         /*
           disable webpack base config `runtimeChunck: single`
           https://github.com/webpack/webpack/issues/11691
-
-          This can be removed when #11843 is merged
-          https://github.com/webpack/webpack/pull/11843
         */
         runtimeChunk: false,
       },

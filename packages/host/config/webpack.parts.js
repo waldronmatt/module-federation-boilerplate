@@ -11,8 +11,8 @@ const siteData = {
   keywords: 'webpack, module federation, host, config',
 };
 
-// optionally pass in `isProduction` to apply environment-specific logic
-const parts = (/* isProduction */) => {
+// eslint-disable-next-line no-unused-vars
+const parts = isProduction => {
   module.exports.loadPages = () => ({
     plugins: [
       new HtmlWebPackPlugin({

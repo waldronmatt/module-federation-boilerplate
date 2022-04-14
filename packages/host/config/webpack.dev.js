@@ -12,7 +12,6 @@ const developmentConfig = {
         warnings: false,
       },
     },
-    // use a rewrite for our 404 page to simulate express logic
     historyApiFallback: {
       rewrites: [{ from: /./, to: '/404.html' }],
     },
