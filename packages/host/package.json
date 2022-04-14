@@ -1,6 +1,6 @@
 {
   "name": "module-federation-host",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "dev": "webpack serve --env development TARGET_ENV=dev --config config/webpack.dev.js",
     "prod": "webpack --env production TARGET_ENV=prod --config config/webpack.prod.js && webpack --env target=server --config config/webpack.server.config.js && node ./dist/server.js",
