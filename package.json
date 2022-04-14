@@ -30,8 +30,8 @@
     "lint": "npm run lint:js",
     "commit": "git-cz",
     "dev": "kill-port 3000 && kill-port 3001 && lerna run --parallel dev",
-    "prod": "kill-port 3000 && kill-port 3001 && lerna run --parallel prod",
     "build": "lerna run --parallel build",
+    "prod": "kill-port 3000 && kill-port 3001 && lerna run --parallel prod",
     "bootstrap": "lerna bootstrap",
     "bootstrap:ci": "lerna bootstrap -- --frozen-lockfile --ignore-engines",
     "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'"

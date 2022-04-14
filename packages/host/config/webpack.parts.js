@@ -10,7 +10,7 @@ const paths = require('./paths');
 const siteData = {
   title: 'Module Federation Template',
   description: 'A dynamic, multi-environment module federation template.',
-  keywords: 'webpack, module federation, remote, config',
+  keywords: 'webpack, module federation, host, config',
 };
 
 // optionally pass in `isProduction` to apply environment-specific logic

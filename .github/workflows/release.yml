@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    name: Publish to NPM
+    name: Publish to GitHub
     runs-on: ubuntu-latest
 
     steps:
@@ -40,9 +40,8 @@ jobs:
       - name: Bootstrap Lerna
         run: yarn bootstrap:ci
 
-      - name: Bump Versions and Publish Packages
+      - name: Bump Versions and Publish to Github
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           yarn version:ci
-          yarn build
