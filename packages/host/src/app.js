@@ -1,4 +1,6 @@
 /* eslint-disable no-undef */
+import 'the-new-css-reset/css/reset.css';
+import 'sanitize.css';
 import Heading from './heading/heading';
 
 const heading = new Heading();
