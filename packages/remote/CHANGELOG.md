@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/waldronmatt/module-federation-template/compare/v1.1.0...v1.1.1) (2022-04-14)
+
+
+### Bug Fixes
+
+* **form-html.tpl.html:** add matching id attributes for form labels ([8fcd71d](https://github.com/waldronmatt/module-federation-template/commit/8fcd71dd5b8a55d0e29ba542997d95be2e352010))
+* **index.html:** remove duplicate meta description ([bf82299](https://github.com/waldronmatt/module-federation-template/commit/bf82299897f2d68ab832e5665c6797e12f2a628c))
+
+
+
+
+
 # [1.1.0](https://github.com/waldronmatt/module-federation-template/compare/v1.0.3...v1.1.0) (2022-04-14)
 
 
