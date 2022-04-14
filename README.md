@@ -10,6 +10,12 @@
 
 A dynamic, multi-environment module federation template.
 
+## Features
+
+- Multi-environment support using `NormalModuleReplacementPlugin`
+- Loads remote apps dynamically
+- Uses shareable configs to reduce boilerplate
+
 ## Installation
 
 Install dependencies:
@@ -29,7 +35,7 @@ yarn bootstrap
 Run dev environment for host and remote in parallel:
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 Build and serve host and remote on Netlify:
