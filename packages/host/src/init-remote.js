@@ -41,8 +41,8 @@ const loadModuleFrom = remote => {
 const initRemote = (remoteScope, remoteModule) => {
   setRemoteScript(config[remoteScope])
     .then(() => {
-      const loadedCommponent = loadComponent(remoteScope, remoteModule);
-      loadModuleFrom(loadedCommponent);
+      const loadedComponent = loadComponent(remoteScope, remoteModule);
+      loadModuleFrom(loadedComponent);
     })
     .catch(err => {
       console.log(
