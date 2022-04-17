@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/waldronmatt/module-federation-template/compare/v1.1.2...v1.1.3) (2022-04-17)
+
+
+### Bug Fixes
+
+* **init-remote.js:** update versioned remotes example ([2958229](https://github.com/waldronmatt/module-federation-template/commit/2958229832d0a5bdbc7efd10baf5c338c811c157))
+
+
+
+
+
 ## [1.1.2](https://github.com/waldronmatt/module-federation-template/compare/v1.1.1...v1.1.2) (2022-04-17)
 
 
