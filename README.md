@@ -32,6 +32,12 @@ yarn bootstrap
 
 ## Getting Started
 
+It is recommended to install the [kill-port](https://www.npmjs.com/package/kill-port) package globally or locally to help terminate ports upon re-running `yarn dev`. See this [lerna issue](https://github.com/lerna/lerna/issues/2284) for more information.
+
+```bash
+yarn global add kill-port
+```
+
 Run dev environment for host and remote in parallel:
 
 ```bash
