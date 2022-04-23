@@ -18,39 +18,27 @@ A dynamic, multi-environment module federation template.
 
 ## Installation
 
-Install dependencies:
+Install package dependencies and link local packages together:
 
 ```bash
 yarn
 ```
 
-Link local packages together and install remaining package dependencies:
-
-```bash
-yarn bootstrap
-```
-
 ## Getting Started
 
-It is recommended to install the [kill-port](https://www.npmjs.com/package/kill-port) package globally or locally to help terminate ports upon re-running `yarn dev`. See this [lerna issue](https://github.com/lerna/lerna/issues/2284) for more information.
-
-```bash
-yarn global add kill-port
-```
-
-Run dev environment for host and remote in parallel:
+Run dev environment for host and remote:
 
 ```bash
 yarn dev
 ```
 
-Build and serve host and remote on Netlify:
+Build host and remote for Netlify:
 
 ```bash
 yarn build
 ```
 
-Build and serve host and remote via Express:
+Build host and remote for Express:
 
 ```bash
 yarn prod
@@ -69,6 +57,14 @@ Lint `.js` files across packages:
 ```bash
 yarn lint
 ```
+
+Serve host and remote for Express:
+
+```bash
+yarn serve
+```
+
+**Note**: Run `yarn prod` first.
 
 ## License
 

@@ -29,11 +29,11 @@
     "lint:js": "eslint --fix .",
     "lint": "npm run lint:js",
     "commit": "git-cz",
-    "dev": "kill-port 3000 && kill-port 3001 && lerna run --parallel dev",
-    "build": "lerna run --parallel build",
-    "prod": "kill-port 3000 && kill-port 3001 && lerna run --parallel prod",
-    "bootstrap": "lerna bootstrap",
-    "bootstrap:ci": "lerna bootstrap -- --frozen-lockfile --ignore-engines",
+    "dev": "turbo run dev --parallel",
+    "prod": "turbo run prod --parallel",
+    "serve": "turbo run serve --parallel",
+    "build": "turbo run build --parallel",
+    "bootstrap:ci": "yarn install --frozen-lockfile --ignore-engines",
     "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'"
   },
   "devDependencies": {
@@ -47,7 +47,8 @@
     "lerna": "^4.0.0",
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.2",
-    "simple-git-hooks": "^2.7.0"
+    "simple-git-hooks": "^2.7.0",
+    "turbo": "^1.2.5"
   },
   "config": {
     "commitizen": {

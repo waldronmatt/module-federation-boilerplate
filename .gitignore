@@ -61,3 +61,6 @@ build/
 
 # jest folder of detailed test coverage
 coverage/
+
+# turbo
+.turbo/

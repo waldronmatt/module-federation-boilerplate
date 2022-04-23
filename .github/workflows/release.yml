@@ -30,15 +30,12 @@ jobs:
 
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn install
+        run: yarn bootstrap:ci
 
       - name: Config Git User
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-
-      - name: Bootstrap Lerna
-        run: yarn bootstrap:ci
 
       - name: Bump Versions and Publish to Github
         env:
