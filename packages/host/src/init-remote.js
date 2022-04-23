@@ -3,19 +3,19 @@
 // eslint-disable-next-line
 import config from '../environments/TARGET_ENV';
 
-const setRemoteScript = module =>
+const setRemoteScript = endpoint =>
   new Promise(resolve => {
     // Method for 'versioned' federated remotes
     // const urlParams = new URLSearchParams(window.location.search);
     // const version = urlParams.get('appVersionParam');
     // const remoteUrlWithVersion = `${module}${version}/remoteEntry.js`;
-    const remoteUrlWithVersion = `${module}/remoteEntry.js`;
+    const remoteUrlWithVersion = `${endpoint}/remoteEntry.js`;
     const script = document.createElement('script');
     script.src = remoteUrlWithVersion;
     document.head.appendChild(script);
     script.onload = () => resolve();
   }).catch(err => {
-    console.log(err, `Error setting script tag for ${module}.`);
+    console.log(err, `Error setting script tag for ${endpoint}.`);
   });
 
 const loadComponent = (scope, module) => {
