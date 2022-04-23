@@ -17,8 +17,7 @@
   "homepage": "https://github.com/waldronmatt/module-federation-template#readme",
   "simple-git-hooks": {
     "pre-commit": "yarn lint-staged",
-    "commit-msg": "yarn commitlint --edit $1",
-    "pre-push": "yarn run lint"
+    "commit-msg": "yarn commitlint --edit $1"
   },
   "lint-staged": {
     "*.js": [
@@ -26,8 +25,6 @@
     ]
   },
   "scripts": {
-    "lint:js": "eslint --fix .",
-    "lint": "npm run lint:js",
     "commit": "git-cz",
     "dev": "turbo run dev --parallel",
     "prod": "turbo run prod --parallel",
@@ -39,14 +36,10 @@
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
-    "@waldronmatt/eslint-config": "^1.1.6",
-    "@waldronmatt/prettier-config": "^1.2.5",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.13.0",
     "lerna": "^4.0.0",
     "lint-staged": "^12.3.7",
-    "prettier": "^2.6.2",
     "simple-git-hooks": "^2.7.0",
     "turbo": "^1.2.5"
   },
