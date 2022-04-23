@@ -72,7 +72,7 @@ yarn serve
 
 `release.yml`
 
-Install and link packages (`release.yml`):
+Install and link packages:
 
 ```bash
 yarn bootstrap:ci
