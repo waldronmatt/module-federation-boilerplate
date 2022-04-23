@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/waldronmatt/module-federation-template/compare/v1.1.4...v1.2.0) (2022-04-23)
+
+
+### Bug Fixes
+
+* **init-remote.js:** rename setRemoteScript param ([b3a7abd](https://github.com/waldronmatt/module-federation-template/commit/b3a7abd8d07d574405cd2678ef5272c31832ff94))
+
+
+### Features
+
+* **build:** migrate task running from lerna to turborepo ([97e1ed7](https://github.com/waldronmatt/module-federation-template/commit/97e1ed79251a6eaa152f9e3c9fe0901e6813149d))
+
+
+
+
+
 ## [1.1.4](https://github.com/waldronmatt/module-federation-template/compare/v1.1.3...v1.1.4) (2022-04-17)
 
 **Note:** Version bump only for package module-federation-host
