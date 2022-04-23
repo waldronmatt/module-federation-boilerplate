@@ -57,7 +57,7 @@ yarn commit
 Do `git push` without hooks.
 
 ```bash
-yarn commit
+yarn push
 ```
 
 Serve host and remote for Express:
