@@ -32,11 +32,13 @@ Run dev environment for host and remote:
 yarn dev
 ```
 
-Build host and remote for Netlify:
+Build and serve host and remote for Netlify:
 
 ```bash
 yarn build
 ```
+
+**Note:** Configure script in Netlify to auto-run via push to `main` branch.
 
 Build host and remote for Express:
 
@@ -52,12 +54,6 @@ Commit changes using conventional changelog:
 yarn commit
 ```
 
-Lint `.js` files across packages:
-
-```bash
-yarn lint
-```
-
 Serve host and remote for Express:
 
 ```bash
@@ -65,6 +61,22 @@ yarn serve
 ```
 
 **Note**: Run `yarn prod` first.
+
+## CI Commands
+
+`release.yml`
+
+Install and link packages (`release.yml`):
+
+```bash
+yarn bootstrap:ci
+```
+
+Create a conventional GitHub release:
+
+```bash
+yarn version:ci
+```
 
 ## License
 
