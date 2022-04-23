@@ -1,6 +1,6 @@
 {
   "name": "module-federation-remote",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "scripts": {
     "dev": "webpack serve --env development --config config/webpack.dev.js",
     "prod": "webpack --env production --config config/webpack.prod.js && webpack --env target=server --config config/webpack.server.config.js",
