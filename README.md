@@ -54,6 +54,12 @@ Commit changes using conventional changelog:
 yarn commit
 ```
 
+Do `git push` without hooks.
+
+```bash
+yarn commit
+```
+
 Serve host and remote for Express:
 
 ```bash
@@ -77,6 +83,10 @@ Create a conventional GitHub release:
 ```bash
 yarn version:ci
 ```
+
+## Issues
+
+There is a problem using `pre-push` hook using `simple-git-hooks`. Use `yarn push` instead of `git push`.
 
 ## License
 

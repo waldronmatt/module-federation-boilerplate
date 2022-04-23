@@ -26,6 +26,7 @@
   },
   "scripts": {
     "commit": "git-cz",
+    "push": "git push --no-verify",
     "dev": "turbo run dev --parallel",
     "prod": "turbo run prod --parallel",
     "serve": "turbo run serve --parallel",
