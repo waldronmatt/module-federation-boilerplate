@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/waldronmatt/module-federation-template/compare/v1.2.0...v1.2.1) (2022-04-23)
+
+
+### Bug Fixes
+
+* **package.json:** add yarn command to git push without hooks ([661e9f5](https://github.com/waldronmatt/module-federation-template/commit/661e9f514596704c5b1d4be58a6c2ca318c7cbda))
+
+
+
+
+
 # [1.2.0](https://github.com/waldronmatt/module-federation-template/compare/v1.1.4...v1.2.0) (2022-04-23)
 
 
