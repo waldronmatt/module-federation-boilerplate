@@ -7607,9 +7607,9 @@ text-table@^0.2.0:
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
 the-new-css-reset@^1.4.9:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/the-new-css-reset/-/the-new-css-reset-1.5.1.tgz#6b68435f6d17180ee705db2f379c1f416e9ebef6"
-  integrity sha512-nLjRW4/RGtYRDPl6NE7TTuYg1T6Xi0/GmMDs0+cZA0b6d66k+aQ7sSNKKQsMivPYUTwswwtWvaWsNjE+UBiOpA==
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/the-new-css-reset/-/the-new-css-reset-1.6.0.tgz#0bdd8641c827d74dcc55eaf0182d8f93a71d0695"
+  integrity sha512-G7nbNfxqBzsuor/zErUZZ9SYvRIw/56dxs2/Bq53EhSjQrb0D6FLmhpM38FU3v9ELWwc85arozGZ82mJahGLYQ==
 
 through2@^2.0.0:
   version "2.0.5"
