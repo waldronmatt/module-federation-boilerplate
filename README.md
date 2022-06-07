@@ -14,7 +14,8 @@ A dynamic, multi-environment module federation template.
 
 - Multi-environment support using `NormalModuleReplacementPlugin`
 - Loads remote apps dynamically
-- Uses shareable configs to reduce boilerplate
+- Uses my [shareable configs](https://github.com/waldronmatt/shareable-configs) to reduce boilerplate
+- ~100% Lighthouse Score
 
 ## Installation
 
@@ -22,6 +23,12 @@ Install package dependencies and link local packages together:
 
 ```bash
 yarn
+```
+
+Install hooks:
+
+```bash
+yarn prepare
 ```
 
 ## Getting Started
@@ -46,6 +53,12 @@ Build host and remote for Express:
 yarn prod
 ```
 
+Serve host and remote for Express:
+
+```bash
+yarn serve
+```
+
 ## Commands
 
 Commit changes using conventional changelog:
@@ -54,39 +67,13 @@ Commit changes using conventional changelog:
 yarn commit
 ```
 
-Do `git push` without hooks.
+Lint host and remote files:
 
 ```bash
-yarn push
+yarn lint
 ```
 
-Serve host and remote for Express:
-
-```bash
-yarn serve
-```
-
-**Note**: Run `yarn prod` first.
-
-## CI Commands
-
-`release.yml`
-
-Install and link packages:
-
-```bash
-yarn bootstrap:ci
-```
-
-Create a conventional GitHub release:
-
-```bash
-yarn version:ci
-```
-
-## Issues
-
-There is a problem using `pre-push` hook using `simple-git-hooks`. Use `yarn push` instead of `git push`.
+**Note**: `release.yml` will run this before versioning and publishing.
 
 ## License
 
