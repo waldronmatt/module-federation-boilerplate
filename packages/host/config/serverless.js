@@ -21,13 +21,13 @@ app.use(
 
 app.use(limiter);
 
-app.get('/', (req, res) => {
-  res.sendFile(paths.INDEX_PAGE);
+app.get('/', (_request, response) => {
+  response.sendFile(paths.INDEX_PAGE);
 });
 
 // 404 route (keep this as the last route)
-app.get('*', (req, res) => {
-  res.sendFile(paths.ERROR_PAGE);
+app.get('*', (_request, response) => {
+  response.sendFile(paths.ERROR_PAGE);
 });
 
 // path must route to lambda

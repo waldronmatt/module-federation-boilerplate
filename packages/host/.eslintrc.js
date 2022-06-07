@@ -1,5 +1,5 @@
 module.exports = {
-  ignorePatterns: ['src/bootstrap.js'],
+  ignorePatterns: ['dist/**', 'src/bootstrap.js', 'src/init-remote.js'],
   extends: '@waldronmatt/eslint-config',
   parserOptions: {
     ecmaVersion: 2020,

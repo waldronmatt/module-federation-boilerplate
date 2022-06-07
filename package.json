@@ -20,6 +20,7 @@
     "prod": "turbo run prod --parallel",
     "serve": "turbo run serve --parallel",
     "build": "turbo run build --parallel",
+    "lint": "turbo run lint --parallel",
     "bootstrap:ci": "yarn install --frozen-lockfile --ignore-engines",
     "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'",
     "commit": "git-cz",

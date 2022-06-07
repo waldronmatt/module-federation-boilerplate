@@ -1,12 +1,12 @@
 // https://webpack.js.org/configuration/node/
 const nodeExternals = require('webpack-node-externals');
 
-module.exports = env => {
+module.exports = environment => {
   return {
     mode: 'production',
     entry: {
       server:
-        env.target === 'serverless'
+        environment.target === 'serverless'
           ? './config/serverless.js'
           : './config/server.js',
     },

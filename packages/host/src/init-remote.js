@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-console */
-// eslint-disable-next-line
 import config from '../environments/TARGET_ENV';
 
 const setRemoteScript = endpoint =>
@@ -12,10 +11,10 @@ const setRemoteScript = endpoint =>
     const remoteUrlWithVersion = `${endpoint}/remoteEntry.js`;
     const script = document.createElement('script');
     script.src = remoteUrlWithVersion;
-    document.head.appendChild(script);
-    script.onload = () => resolve();
-  }).catch(err => {
-    console.log(err, `Error setting script tag for ${endpoint}.`);
+    document.head.append(script);
+    script.addEventListener('load', () => resolve());
+  }).catch(error => {
+    console.log(error, `Error setting script tag for ${endpoint}.`);
   });
 
 const loadComponent = (scope, module) => {
@@ -25,16 +24,15 @@ const loadComponent = (scope, module) => {
     // eslint-disable-next-line camelcase
     await container.init(__webpack_share_scopes__.default);
     const factory = await window[scope].get(module);
-    const Module = factory();
-    return Module;
+    return factory();
   };
 };
 
 const loadModuleFrom = remote => {
   remote()
     .then(module => module.default())
-    .catch(err => {
-      console.log(err, `Error loading default module from ${remote}.`);
+    .catch(error => {
+      console.log(error, `Error loading default module from ${remote}.`);
     });
 };
 
@@ -42,11 +40,11 @@ const initRemote = (remoteScope, remoteModule) => {
   setRemoteScript(config[remoteScope])
     .then(() => {
       const loadedComponent = loadComponent(remoteScope, remoteModule);
-      loadModuleFrom(loadedComponent);
+      return loadModuleFrom(loadedComponent);
     })
-    .catch(err => {
+    .catch(error => {
       console.log(
-        err,
+        error,
         `Error initializing ${remoteModule} from ${remoteScope}.`
       );
     });

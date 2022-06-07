@@ -1,3 +1,4 @@
+// eslint-disable-next-line unicorn/prevent-abbreviations
 const webpack = require('webpack');
 const { extendWebpackBaseConfig } = require('@waldronmatt/webpack-config');
 const EslintPlugin = require('eslint-webpack-plugin');

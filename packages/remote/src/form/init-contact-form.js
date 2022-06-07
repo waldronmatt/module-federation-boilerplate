@@ -10,7 +10,7 @@ import formHTML from './form-html.tpl.html?raw';
 const printForm = () => {
   const body = document.querySelector('main');
   const form = document.createElement('div');
-  body.appendChild(form);
+  body.append(form);
   form.setAttribute('id', 'form-root');
   const html = renderTemplate(formHTML);
   $('#form-root').append(html);

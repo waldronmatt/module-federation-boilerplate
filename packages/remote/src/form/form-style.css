@@ -38,10 +38,6 @@ textarea.parsley-error {
     margin: 2px 0 3px;
     opacity: 0;
     padding: 0;
-    transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    transition: none;
   }
 }
 
@@ -53,10 +49,6 @@ textarea.parsley-error {
   margin: 2px 0 3px;
   opacity: 0;
   padding: 0;
-  transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
 }
 
 .parsley-errors-list.filled {

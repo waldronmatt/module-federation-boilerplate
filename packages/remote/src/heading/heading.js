@@ -8,7 +8,7 @@ class Heading {
     h1.classList.add('header-styling');
     const body = document.querySelector('header');
     h1.innerHTML = `Welcome to ${pageName}`;
-    body.appendChild(h1);
+    body.append(h1);
   }
 }
 

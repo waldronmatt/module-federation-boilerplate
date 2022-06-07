@@ -1,4 +1,4 @@
 module.exports = {
-  ignorePatterns: ['src/bootstrap.js'],
+  ignorePatterns: ['dist/**', 'src/bootstrap.js'],
   extends: '@waldronmatt/eslint-config',
 };

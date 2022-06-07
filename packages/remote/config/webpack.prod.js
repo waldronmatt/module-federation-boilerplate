@@ -1,3 +1,4 @@
+// eslint-disable-next-line unicorn/prevent-abbreviations
 const { ESBuildMinifyPlugin } = require('esbuild-loader');
 const CompressionPlugin = require('compression-webpack-plugin');
 const zlib = require('zlib');

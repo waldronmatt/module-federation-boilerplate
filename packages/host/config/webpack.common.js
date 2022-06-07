@@ -4,9 +4,9 @@ const { baseParts } = require('@waldronmatt/webpack-config');
 const paths = require('./paths');
 const parts = require('./webpack.parts');
 
-const commonConfig = (isProduction, env) => {
+const commonConfig = (isProduction, environment) => {
   parts(isProduction);
-  const targetEnv = env.TARGET_ENV || 'prod';
+  const targetEnvironment = environment.TARGET_ENV || 'prod';
 
   return merge([
     {
@@ -41,16 +41,16 @@ const commonConfig = (isProduction, env) => {
             // eslint-disable-next-line no-param-reassign
             resource.request = resource.request.replace(
               /TARGET_ENV/,
-              `${targetEnv}`
+              `${targetEnvironment}`
             );
           }
         ),
       ],
     },
-    baseParts.loadJS(),
-    baseParts.setScriptOutputPath(),
-    baseParts.loadCSS(),
-    baseParts.setStyleOutputPath(),
+    baseParts.loadJS({}),
+    baseParts.setScriptOutputPath({}),
+    baseParts.loadCSS({}),
+    baseParts.setStyleOutputPath({}),
     parts.loadPages(),
     parts.loadMF(),
   ]);

@@ -9,11 +9,11 @@ heading.render('HOST (Module Federation)');
 import(/* webpackChunkName: "FormApp" */ './init-remote')
   .then(module => {
     const initRemote = module.default();
-    initRemote('FormApp', './initContactForm');
+    return initRemote('FormApp', './initContactForm');
   })
-  .catch(err => {
+  .catch(error => {
     // eslint-disable-next-line no-console
-    console.log(err, 'Error initializing lazy loaded remote.');
+    console.log(error, 'Error initializing lazy loaded remote.');
   });
 
 //
