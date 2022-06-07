@@ -2,6 +2,7 @@
 const webpack = require('webpack');
 const { extendWebpackBaseConfig } = require('@waldronmatt/webpack-config');
 const EslintPlugin = require('eslint-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 const { MFLiveReloadPlugin } = require('@module-federation/fmr');
 const commonConfig = require('./webpack.common');
 const paths = require('./paths');
@@ -33,7 +34,8 @@ const developmentConfig = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new EslintPlugin({ extensions: ['js', 'ts'] }),
+    new StylelintPlugin(),
+    new EslintPlugin(),
     new MFLiveReloadPlugin({
       port: paths.PORT,
       container: 'FormApp',
