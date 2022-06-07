@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/waldronmatt/module-federation-template/compare/v1.2.1...v1.3.0) (2022-06-07)
+
+
+### Bug Fixes
+
+* **dependabot.yml:** suppress dependabot updates ([3c8d5a7](https://github.com/waldronmatt/module-federation-template/commit/3c8d5a75fb2a75e98ee75827e4b809bb052ae09c))
+* **global:** add turbo linting cmd, install deps, fix linting ([3841555](https://github.com/waldronmatt/module-federation-template/commit/3841555c2c8b9234bcecce8e9152c749a0bf7010))
+
+
+### Features
+
+* **global:** upgrade build tooling and configurations ([5333ec3](https://github.com/waldronmatt/module-federation-template/commit/5333ec36ac21b3164981494c6d45d35e97e5a426))
+
+
+
+
+
 ## [1.2.1](https://github.com/waldronmatt/module-federation-template/compare/v1.2.0...v1.2.1) (2022-04-23)
 
 
