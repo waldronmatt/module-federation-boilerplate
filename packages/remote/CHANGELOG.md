@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/waldronmatt/module-federation-template/compare/v1.3.0...v1.3.1) (2022-06-07)
+
+
+### Bug Fixes
+
+* **packages:** remove lint-staged dep, update lint plugins ([db32886](https://github.com/waldronmatt/module-federation-template/commit/db328866247f6525a7eb20c53caaadd5c951f87c))
+
+
+
+
+
 # [1.3.0](https://github.com/waldronmatt/module-federation-template/compare/v1.2.1...v1.3.0) (2022-06-07)
 
 
