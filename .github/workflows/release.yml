@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -31,6 +31,12 @@ jobs:
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: yarn bootstrap:ci
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Build
+        run: yarn build
 
       - name: Config Git User
         run: |
