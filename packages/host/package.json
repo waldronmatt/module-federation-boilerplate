@@ -6,7 +6,7 @@
     "prod": "webpack --env production TARGET_ENV=prod --config config/webpack.prod.js && webpack --env target=server --config config/webpack.server.config.js",
     "serve": "node ./dist/server.js",
     "build": "webpack --env production TARGET_ENV=prod --config config/webpack.prod.js && webpack --env target=serverless --config config/webpack.server.config.js",
-    "lint:js": "eslint --fix . **/*.{js,jsx,ts,tsx}",
+    "lint:js": "eslint --fix **/*.{js,jsx,ts,tsx}",
     "lint:css": "stylelint --fix **/*.{css,scss}",
     "lint": "yarn lint:js && yarn lint:css"
   },
