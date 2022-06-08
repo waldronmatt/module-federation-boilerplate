@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.2](https://github.com/waldronmatt/module-federation-template/compare/v1.3.1...v1.3.2) (2022-06-08)
+
+
+### Bug Fixes
+
+* **packages:** remove dot from eslint lint command ([5734a5e](https://github.com/waldronmatt/module-federation-template/commit/5734a5e34ede2cbaa44c3a9dd8c4390b55533894))
+
+
+
+
+
 ## [1.3.1](https://github.com/waldronmatt/module-federation-template/compare/v1.3.0...v1.3.1) (2022-06-07)
 
 
