@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.3](https://github.com/waldronmatt/module-federation-boilerplate/compare/v1.3.2...v1.3.3) (2022-10-18)
+
+
+### Bug Fixes
+
+* **global:** rename template to boilerplate, add keywords ([eb4284b](https://github.com/waldronmatt/module-federation-boilerplate/commit/eb4284b64b7d80afce64ae98ccf68d4fb074efd2))
+* **prod.js:** update endpoint ([af1273a](https://github.com/waldronmatt/module-federation-boilerplate/commit/af1273a0a451ea3afd20cbd4251bc67e64b69b26))
+* **webpack.parts.js:** update site metadata ([840dc11](https://github.com/waldronmatt/module-federation-boilerplate/commit/840dc11effbedcf90ecc501d81a7422f3a499d65))
+
+
+
+
+
 ## [1.3.2](https://github.com/waldronmatt/module-federation-template/compare/v1.3.1...v1.3.2) (2022-06-08)
 
 
