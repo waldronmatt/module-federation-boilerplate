@@ -1,20 +1,28 @@
 {
-  "name": "module-federation-template",
-  "description": "A dynamic, multi-environment module federation template.",
+  "name": "module-federation-boilerplate",
+  "description": "A dynamic, multi-environment module federation boilerplate.",
   "private": true,
   "author": "Matthew Waldron",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waldronmatt/module-federation-template.git"
+    "url": "git+https://github.com/waldronmatt/module-federation-boilerplate.git"
   },
+  "keywords": [
+    "template",
+    "boilerplate",
+    "module-federation",
+    "webpack",
+    "multi-environment",
+    "dynamic"
+  ],
   "workspaces": [
     "packages/*"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/waldronmatt/module-federation-template/issues"
+    "url": "https://github.com/waldronmatt/module-federation-boilerplate/issues"
   },
-  "homepage": "https://github.com/waldronmatt/module-federation-template#readme",
+  "homepage": "https://github.com/waldronmatt/module-federation-boilerplate#readme",
   "scripts": {
     "dev": "turbo run dev --parallel",
     "prod": "turbo run prod --parallel",
