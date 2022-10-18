@@ -3,9 +3,9 @@ const { ModuleFederationPlugin } = require('webpack').container;
 const paths = require('./paths');
 
 const siteData = {
-  title: 'Module Federation Template',
-  description: 'A dynamic, multi-environment module federation template.',
-  keywords: 'webpack, module federation, remote, config',
+  title: 'Module Federation Boilerplate',
+  description: 'A dynamic, multi-environment module federation boilerplate.',
+  keywords: 'webpack, module federation, boilerplate, template, remote, config',
 };
 
 // eslint-disable-next-line no-unused-vars
