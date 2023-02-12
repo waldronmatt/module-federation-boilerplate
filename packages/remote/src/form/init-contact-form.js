@@ -7,7 +7,7 @@ import renderTemplate from './template';
 // eslint-disable-next-line import/no-unresolved
 import formHTML from './form-html.tpl.html?raw';
 
-const printForm = () => {
+export const printForm = () => {
   const body = document.querySelector('main');
   const form = document.createElement('div');
   body.append(form);
@@ -16,7 +16,7 @@ const printForm = () => {
   $('#form-root').append(html);
 };
 
-const setupLogic = () => {
+export const setupLogic = () => {
   $('#demo-form')
     .parsley()
     .on('field:validated', () => {

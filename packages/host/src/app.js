@@ -1,38 +1,47 @@
 /* eslint-disable no-undef */
 import 'the-new-css-reset/css/reset.css';
 import 'sanitize.css';
+import { importRemote } from '@module-federation/utilities';
+// eslint-disable-next-line import/no-unresolved, import/extensions
+import environmentConfig from '../environments/TARGET_ENV';
 import Heading from './heading/heading';
 
 const heading = new Heading();
 heading.render('HOST (Module Federation)');
 
-import(/* webpackChunkName: "FormApp" */ './init-remote')
+importRemote({
+  url: environmentConfig.FormApp,
+  scope: 'FormApp',
+  module: './initContactForm',
+})
   .then(module => {
-    const initRemote = module.default();
-    return initRemote('FormApp', './initContactForm');
+    return module.default();
   })
-  .catch(error => {
-    // eslint-disable-next-line no-console
-    console.log(error, 'Error initializing lazy loaded remote.');
-  });
+  // eslint-disable-next-line no-console
+  .catch(error => console.log(error));
 
 //
 // Uncomment below to load dynamic remote on click event
 // And uncomment lines in index.html
 //
 
-// const getHeader = document.getElementById('click-me');
+// const getHeader = document.querySelector('#click-me');
 
 // const lazyLoadRemoteApp = () => {
-//   import(/* webpackChunkName: "FormApp" */ './init-remote')
-//     .then(module => {
-//       const initRemote = module.default();
-//       initRemote('FormApp', './initContactForm');
+//   importRemote({
+//     url: environmentConfig.FormApp,
+//     scope: 'FormApp',
+//     module: './initContactForm',
+//   })
+//     .then(({ printForm, setupLogic }) => {
+//       // if you want to use individual exports
+//       return {
+//         p: printForm(),
+//         s: setupLogic(),
+//       };
 //     })
-//     .catch(err => {
-//       // eslint-disable-next-line no-console
-//       console.log(err, 'Error initializing lazy loaded remote.');
-//     });
+//     // eslint-disable-next-line no-console
+//     .catch(error => console.log(error));
 
 //   getHeader.removeEventListener('click', lazyLoadRemoteApp);
 // };
