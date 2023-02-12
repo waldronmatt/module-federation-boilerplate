@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.4](https://github.com/waldronmatt/module-federation-boilerplate/compare/v1.3.3...v1.3.4) (2023-02-12)
+
+
+### Bug Fixes
+
+* **host:** remove internal remote bootstrapping in favor of mf utility ([d268635](https://github.com/waldronmatt/module-federation-boilerplate/commit/d268635bbe78ce9e706ccdab90ef8e2f20c41812))
+
+
+
+
+
 ## [1.3.3](https://github.com/waldronmatt/module-federation-boilerplate/compare/v1.3.2...v1.3.3) (2022-10-18)
 
 
